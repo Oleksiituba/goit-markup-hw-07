@@ -801,8 +801,8 @@ justify-content: center;
     height: 100vh;
     top: 0;
     background-color: rgba(0, 0, 0, 0.2);
-    transition: opacity 300ms cubic-bezier(.57, .57, 1, .92), 
-    visibility 300ms cubic-bezier(.57, .57, 1, .92);    
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);    
 }
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0) rotate(360deg);
@@ -817,7 +817,7 @@ justify-content: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1) rotate(0);
-    transition: transform 300ms cubic-bezier(.57, .57, 1, .92);
+    transition: transform 250ms cubic-bezier(.57, .57, 1, .92);
     padding: 40px;
 }
 
@@ -863,16 +863,34 @@ justify-content: center;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    padding-left: 10px;
+    padding-left: 42px;
     color: #212121;
     font-weight: 700;
     font-size: 14px;
+    outline: transparent;
+    transition-property: border-color ;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal_input :valid {
-border: 1px solid var(--btx-title--color);
-color: blue;
+.modal_input:focus {
+    border-color: var(--btx-title--color) ;
 }
-
+.modal_input:focus + .modal_icon {
+    fill: var(--btx-title--color);
+}
+.input-wrap{
+    position:relative;
+}
+ .modal_icon {
+    position:absolute;
+    left: 12px;;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: var(--first-title-color);
+    transition-property: fill ;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ }
 .modal_field {
 margin-bottom: 10px
 }
@@ -890,16 +908,25 @@ margin-bottom: 10px
     color : var(--text-title--color); 
     
 }
-.modal_text{
+.modal-text{
     width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
     padding: 10px;
+    box-sizing: border-box;
+    transition-property: border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.modal_text::placeholder {
+.modal-text:focus{
+border-color: var(--btx-title--color);
+outline: none;
+}
+
+.modal-text::placeholder {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
@@ -907,14 +934,67 @@ margin-bottom: 10px
 
     color: rgba(117, 117, 117, 0.5);
 }
-
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 .checkbox{
     margin-bottom: 30px;
 }
+
 .checkbox_link{
-   text-decoration: underline;
-color:rgba(33, 150, 243, 1)
+   text-decoration: none;
+border-bottom: 1px solid var(--btx-title--color);
+color:var(--btx-title--color);
+margin-left: 6px;
+
 }
+.check-text{
+    font-weight: 400;
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: 0.03em;
+        color: var(--text-title--color);
+        display: flex;
+        align-items: center;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        
+}
+.check-text span{
+   
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--first-title-color);
+    border-radius: 2px;
+    margin-right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+       
+}
+.check_icon{
+    fill: transparent;
+}
+.checkbox_input:checked + .check-text span {
+    background-color: var(--btx-title--color);
+    border: none;
+}
+.checkbox_input:checked + .check-text .check_icon{
+  fill: var(--second-title-color);
+}
+
+
 .modal_button{
     font-weight: 700;
     font-size: 16px;
@@ -926,5 +1006,8 @@ color:rgba(33, 150, 243, 1)
     border: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding: 10px 52px;
-display: inline-block;
+    
+    position: absolute;
+        left: 165px;
+       
  }
