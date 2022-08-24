@@ -1,7 +1,27 @@
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: var(--second-title-color);
-  color: var(--first-title-color);
+:root {
+  --first-title-color: #212121;
+  --second-title-color: #ffffff;
+  --btx-title--color: #2196F3;
+  --text-title--color: #757575;
+  --logo--title--color: #000000;
+  --bgrd--title--color: #2F303A;
+  --footer--title--color: rgba(255, 255, 255, 0.6);
+  --team--section--color: #F5F4FA;
+  --btx-color--bg: #188CE8;
+  --bg--title-color: #E5E5E5;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 p,
@@ -28,14 +48,16 @@ a {
   text-decoration: none;
 }
 
-button {
-  cursor: pointer;
-}
-
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--second-title-color);
+  color: var(--first-title-color);
 }
 
 .container {
@@ -46,10 +68,13 @@ ul {
   /* outline: 2px solid tomato */
 }
 
+button {
+  cursor: pointer;
+}
+
 .header {
   border-bottom: 1px solid #ECECEC;
 }
-
 .header > .container {
   display: flex;
   align-items: center;
@@ -168,7 +193,7 @@ ul {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/work.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   margin-right: auto;
   margin-left: auto;
   max-width: 1600px;
@@ -546,7 +571,7 @@ ul {
 }
 
 .container_mailing {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .mailing_info {
@@ -567,6 +592,14 @@ ul {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding: 15px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25px;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mailing_input::placeholder {
@@ -774,10 +807,18 @@ ul {
   align-items: center;
   justify-content: center;
   color: #000000;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button_icon {
-  color: currentColor;
+  fill: currentColor;
+}
+
+.modal_close:hover,
+.modal_close:focus {
+  color: var(--btx-color--bg);
 }
 
 .is-hidden {
@@ -792,7 +833,7 @@ ul {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 30 px;
+  margin-bottom: 12px;
 }
 
 .modal_input {
@@ -877,19 +918,6 @@ ul {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
 .checkbox {
   margin-bottom: 30px;
 }
@@ -909,10 +937,10 @@ ul {
   color: var(--text-title--color);
   display: flex;
   align-items: center;
+  justify-content: center;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .check-text span {
   width: 16px;
   height: 15px;

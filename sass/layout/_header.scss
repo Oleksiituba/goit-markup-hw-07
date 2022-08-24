@@ -1,11 +1,12 @@
 .header {
     border-bottom: 1px solid #ECECEC;
+    >.container {
+            display: flex;
+            align-items: center;
+        }
 }
 
-.header>.container {
-    display: flex;
-    align-items: center;
-}
+
 
 .header-web-studio {
     font-family: 'Raleway';
