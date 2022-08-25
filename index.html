@@ -20,29 +20,30 @@
 </head>
 
 <body>
-    <!--Header-->
+     
+                                     <!--Header-->
     <header class="header">
         <div class="container container-flex header-container">
-            <a class="header-web-studio" lang="en" href="WebStudio"> <span class="header-web">Web</span>Studio</a>
+            <a class="header__logo" lang="en" href="WebStudio"> <span class="logo__web">Web</span>Studio</a>
 
-            <nav class="header-nav">
-                <ul class="header-list">
-                    <li class="header-links"> <a href="index.html" class="header-link current">Студія</a></li>
-                    <li class="header-links"> <a href="portfolio.html" class="header-link">Портфоліо</a></li>
-                    <li class="header-links"> <a class="header-link" href="">Контакти</a></li>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item"> <a href="index.html" class="navigation__link current">Студія</a></li>
+                    <li class="navigation__item"> <a href="portfolio.html" class="navigation__link">Портфоліо</a></li>
+                    <li class="navigation__item"> <a class="navigation__link" href="">Контакти</a></li>
                 </ul>
             </nav>
 
-            <ul class="header-item-contact">
-                <li class="header-links-contacts">
-                    <a class="header-link-contact" href="tell:+380961111111"> <svg class="contacts-ikon" width="16"
+            <ul class="connect__list">
+                <li class="connect__item">
+                    <a class="connect__link" href="tell:+380961111111"> <svg class="connect__ikon" width="16"
                             height="16">
                             <use href="./img/symbol.svg#icon-mail"></use>
                         </svg> +38 096 111 11 11</a>
                 </li>
 
-                <li class="header-links-contact"><a class="header-link-contact link_mail"
-                        href="mail:info@devstudio.com"> <svg class="contacts-ikon" width="16" height="16">
+                <li class="header-links-contact"><a class="connect__link link_mail"
+                        href="mail:info@devstudio.com"> <svg class="connect__ikon" width="16" height="16">
                             <use href="./img/symbol.svg#icon-tell"></use>
                         </svg> info@devstudio.com</a></li>
             </ul>
@@ -50,48 +51,50 @@
 
         </div>
     </header>
-    <!-- Main-->
+
+                     <!-- Main-->
     <main>
+            <!-- name section-->
         <section class="name section name-section ">
             <div class="container container-name">
-                <h1 class="main_name ">
+                <h1 class="name__text">
                     Ефективні рішення для вашого бізнесу
                 </h1>
 
                 <button class="name_btn" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
-
+            <!-- peculiarity section-->
         <section class="peculiarity section ">
             <div class="container ">
                 <h2 hidden>наші особливості</h2>
-                <ul class="peculiarity_title">
+                <ul class="peculiarity__list">
 
-                    <li class="peculiarity_list">
-                        <h3 class="peculiarity_item">УВАГА ДО ДЕТАЛЕЙ</h3>
-                        <p class="peculiarity_text">Ідейні міркування, і навіть початок повсякденної роботи з формування
+                    <li class="peculiarity__item">
+                        <h3 class="peculiarity__link">УВАГА ДО ДЕТАЛЕЙ</h3>
+                        <p class="peculiarity__text">Ідейні міркування, і навіть початок повсякденної роботи з формування
                             позиції.</p>
                     </li>
 
-                    <li class="peculiarity_list">
-                        <h3 class="peculiarity_item">ПУНКТУАЛЬНІСТЬ</h3>
-                        <p class="peculiarity_text">Завдання організації, особливо рамки і місце навчання кадрів тягне у
+                    <li class="peculiarity__item">
+                        <h3 class="peculiarity__link">ПУНКТУАЛЬНІСТЬ</h3>
+                        <p class="peculiarity__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у
                             себе.</p>
                     </li>
 
-                    <li class="peculiarity_list">
-                        <h3 class="peculiarity_item">ПЛАНУВАННЯ</h3>
-                        <p class="peculiarity_text">Так само консультація з широким активом значною мірою зумовлює.</p>
+                    <li class="peculiarity__item">
+                        <h3 class="peculiarity__link">ПЛАНУВАННЯ</h3>
+                        <p class="peculiarity__text">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
-                    <li class="peculiarity_list">
-                        <h3 class="peculiarity_item">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                        <p class="peculiarity_text">Значимість цих проблем настільки очевидна, що реалізація планових
+                    <li class="peculiarity__item">
+                        <h3 class="peculiarity__link">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                        <p class="peculiarity__text">Значимість цих проблем настільки очевидна, що реалізація планових
                             завдань.</p>
                     </li>
                 </ul>
             </div>
         </section>
-
+        <!-- work section-->
         <section class="work section fithers">
             <div class="container">
                 <h2 class="work_title">Чим ми займаємося</h2>
@@ -129,7 +132,7 @@
                 </ul>
             </div>
         </section>
-
+            <!-- team section-->
         <section class="team-section section ">
             <div class="container  ">
                 <h2 class="team">Наша команда</h2>
@@ -306,7 +309,7 @@
                 </ul>
             </div>
         </section>
-
+            <!-- client section-->
         <section class="client section ">
             <div class="container">
                 <h2 class="client-title">Постійні клієнти</h2>
@@ -432,7 +435,7 @@
     </footer>
 
                   <!--Window-->
-                  
+
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal_close" data-modal-close>

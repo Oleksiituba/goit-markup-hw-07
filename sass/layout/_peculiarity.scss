@@ -1,8 +1,8 @@
- .peculiarity_title {
+ .peculiarity__list{
      display: flex;
      column-gap: 30px;
  }
- .peculiarity_list {
+ .peculiarity__item {
      flex-basis: calc((100% - 3 * 30px)/ 4 - 30px);
         &::before {
             display: block;
@@ -27,7 +27,7 @@
              background-image: url(../img/astronaut.svg);
                  }
  }
- .peculiarity_item {
+ .peculiarity__link {
      font-size: 14px;
      line-height: 1.14;
      letter-spacing: 0.03em;
@@ -35,7 +35,7 @@
      color: var(--first-title-color);
      margin-bottom: 10px;
  }
- .peculiarity_text {
+ .peculiarity__text {
      font-size: 14px;
      line-height: 1.71;
      letter-spacing: 0.03em;
