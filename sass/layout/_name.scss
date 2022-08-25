@@ -1,5 +1,4 @@
 .name {
-
     background-color: var(--bgrd--title--color);
     height: 600px;
     text-align: center;
@@ -15,14 +14,11 @@
     max-width: 1600px;
 
 }
-
 .container_main_name {
     padding-right: 237px;
     padding-left: 237px;
 }
-
 .main_name {
-
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -34,14 +30,8 @@
     width: 696px;
     margin-right: auto;
     margin-left: auto;
-
-
-
-
 }
-
 .name_btn {
-
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -58,11 +48,7 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.name_btn:hover,
-.name_btn:focus {
-
-    background-color: var(--btx-color--bg)
+      &:hover,&:focus {
+            background-color: var(--btx-color--bg)
+        }
 }

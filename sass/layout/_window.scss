@@ -7,12 +7,6 @@
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0) rotate(360deg);
-
-}
-
 .modal {
     background-color: #ffffff;
     width: 528px;
@@ -24,8 +18,10 @@
     transform: translate(-50%, -50%) scale(1) rotate(0);
     transition: transform 250ms cubic-bezier(.57, .57, 1, .92);
     padding: 40px;
+    .backdrop.is-hidden & {
+            transform: translate(-50%, -50%) scale(0) rotate(360deg);
+         }
 }
-
 .modal_close {
     position: absolute;
     right: 10px;
@@ -42,24 +38,18 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,&:focus {
+    color: var(--btx-color--bg);
+        }
 }
-
 .button_icon {
     fill: currentColor;
-
 }
-
-.modal_close:hover,
-.modal_close:focus {
-    color: var(--btx-color--bg);
-}
-
 .is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
 }
-
 .modal_title {
     font-weight: 700;
     font-size: 20px;
@@ -67,9 +57,7 @@
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 12px;
-
 }
-
 .modal_input {
     width: 100%;
     height: 40px;
@@ -83,20 +71,13 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus {
+            border-color: var(--btx-title--color);
+        }
 }
-
-.modal_input:focus {
-    border-color: var(--btx-title--color);
-}
-
-.modal_input:focus+.modal_icon {
-    fill: var(--btx-title--color);
-}
-
 .input-wrap {
     position: relative;
 }
-
 .modal_icon {
     position: absolute;
     left: 12px;
@@ -107,16 +88,16 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    .modal_input:focus + & {
+            fill: var(--btx-title--color);
+        }
 }
-
 .modal_field {
     margin-bottom: 10px
 }
-
 .modal_field_coment {
     margin-bottom: 20px;
 }
-
 .modal_label {
     margin-bottom: 5px;
     display: block;
@@ -125,9 +106,7 @@
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: var(--text-title--color);
-
 }
-
 .modal-text {
     width: 100%;
     height: 120px;
@@ -139,14 +118,11 @@
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
-
 .modal-text:focus {
     border-color: var(--btx-title--color);
     outline: none;
 }
-
 .modal-text::placeholder {
     font-weight: 400;
     font-size: 12px;
@@ -155,21 +131,15 @@
 
     color: rgba(117, 117, 117, 0.5);
 }
-
-
-
 .checkbox {
     margin-bottom: 30px;
 }
-
 .checkbox_link {
     text-decoration: none;
     border-bottom: 1px solid var(--btx-title--color);
     color: var(--btx-title--color);
     margin-left: 6px;
-
 }
-
 .check-text {
     font-weight: 400;
     font-size: 14px;
@@ -181,8 +151,7 @@
     justify-content: center;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    span {
-    
+       span {
             width: 16px;
             height: 15px;
             border: 2px solid var(--first-title-color);
@@ -191,26 +160,19 @@
             display: flex;
             align-items: center;
             justify-content: center;
+             .checkbox_input:checked + & {
+                    background-color: var(--btx-title--color);
+                    border: none;
+                }
+           
         }
-
-
 }
-
-
 .check_icon {
     fill: transparent;
+    .checkbox_input:checked + .check-text & {
+            fill: var(--second-title-color);
+        }
 }
-
-.checkbox_input:checked+.check-text span {
-    background-color: var(--btx-title--color);
-    border: none;
-}
-
-.checkbox_input:checked+.check-text .check_icon {
-    fill: var(--second-title-color);
-}
-
-
 .modal_button {
     font-weight: 700;
     font-size: 16px;
@@ -222,8 +184,6 @@
     border: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding: 10px 52px;
-
     position: absolute;
     left: 165px;
-
 }
