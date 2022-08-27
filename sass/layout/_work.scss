@@ -1,4 +1,4 @@
-.work_title {
+.work__title {
 
     font-size: 36px;
     line-height: 1.16;
@@ -7,15 +7,15 @@
     text-align: center;
     margin-bottom: 50px;
 }
-.work_list {
+.work__list {
     list-style: none;
     display: flex;
     column-gap: 30px;
 }
-.work_thumb {
+.work-thumb {
     position: relative;
 }
-.thumb_content {
+.work-thumb__content {
     position: absolute;
     font-weight: 700;
     font-size: 14px;

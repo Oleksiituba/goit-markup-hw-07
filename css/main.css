@@ -54,6 +54,19 @@ ul {
   margin: 0;
 }
 
+.team-soc--color-light {
+  color: #AFB1B8;
+}
+
+.client-link--color-light {
+  color: #AFB1B8;
+  border: 1px solid #AFB1B8;
+}
+
+.web--color-btx {
+  color: var(--btx-title--color);
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--second-title-color);
@@ -92,10 +105,6 @@ button {
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
-}
-
-.logo__web {
-  color: var(--btx-title--color);
 }
 
 .navigation__list {
@@ -139,13 +148,14 @@ button {
   background-color: var(--btx-title--color);
 }
 
-.connect__list {
+.connect {
   margin-left: auto;
+}
+.connect__list {
   display: flex;
   align-items: center;
   gap: 50px;
 }
-
 .connect__link {
   font-weight: 500;
   font-size: 14px;
@@ -165,7 +175,6 @@ button {
 .connect__link:hover, .connect__link:focus {
   color: var(--btx-title--color);
 }
-
 .connect__ikon {
   fill: currentColor;
   margin-right: 10px;
@@ -266,7 +275,7 @@ button {
   background-image: url(../img/astronaut.svg);
 }
 
-.peculiarity__link {
+.peculiarity__title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -284,7 +293,7 @@ button {
   height: 75px;
 }
 
-.work_title {
+.work__title {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
@@ -293,17 +302,17 @@ button {
   margin-bottom: 50px;
 }
 
-.work_list {
+.work__list {
   list-style: none;
   display: flex;
   column-gap: 30px;
 }
 
-.work_thumb {
+.work-thumb {
   position: relative;
 }
 
-.thumb_content {
+.work-thumb__content {
   position: absolute;
   font-weight: 700;
   font-size: 14px;
@@ -322,11 +331,11 @@ button {
   justify-content: center;
 }
 
-.team-section {
+.team {
   background-color: #F5F4FA;
 }
 
-.team {
+.team__title {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
@@ -335,30 +344,30 @@ button {
   margin-bottom: 50px;
 }
 
-.team_title {
+.team__list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   column-gap: 30px;
 }
 
-.team_list {
+.team__item {
   background-color: var(--second-title-color);
   text-decoration: none;
   width: 270px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.team_list_img {
+.card-team__img {
   display: block;
 }
 
-.content_time {
+.content-team {
   text-align: center;
   padding: 30px 32px;
 }
 
-.team_name {
+.content-team__title {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -366,7 +375,7 @@ button {
   margin-bottom: 10px;
 }
 
-.team_text {
+.content-team__text {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -374,30 +383,29 @@ button {
   margin-bottom: 16px;
 }
 
-.team_soc {
+.team-soc {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.team_soc_link {
+.team-soc__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #AFB1B8;
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team_soc_link:hover, .team_soc_link:focus {
+.team-soc__link:hover, .team-soc__link:focus {
   background-color: var(--btx-title--color);
   color: #ffffff;
 }
 
-.team_soc_icon {
+.team-soc__icon {
   fill: currentColor;
 }
 
@@ -425,8 +433,6 @@ button {
   align-items: center;
   justify-content: center;
   outline: transparent;
-  color: #AFB1B8;
-  border: 1px solid #AFB1B8;
   border-radius: 4px;
   transition-property: color, border;
   transition-duration: 250ms;
@@ -450,7 +456,7 @@ button {
   align-items: baseline;
 }
 
-.footer-web-studio {
+.contacts__web-studio {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -460,20 +466,14 @@ button {
   color: var(--second-title-color);
 }
 
-.footer-web {
-  color: var(--btx-title--color);
-}
-
-.footer-address {
+.address {
   font-style: normal;
   margin-top: 20px;
 }
-
-.contacts-item {
+.address__list {
   list-style: none;
 }
-
-.footer-contacts-adress {
+.address__link-maps {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -483,11 +483,10 @@ button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-contacts-adress:hover, .footer-contacts-adress:focus {
+.address__link-maps:hover, .address__link-maps:focus {
   color: var(--btx-title--color);
 }
-
-.footer-contacts-link {
+.address__link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -498,17 +497,16 @@ button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-contacts-link:hover, .footer-contacts-link:focus {
+.address__link:hover, .address__link:focus {
   color: var(--btx-title--color);
 }
 
-.container-soc {
+.socials {
   align-items: center;
   justify-content: center;
   margin-left: 70px;
 }
-
-.footer-info {
+.socials__info {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -516,14 +514,12 @@ button {
   color: var(--second-title-color);
   text-transform: uppercase;
 }
-
-.footer-soc {
+.socials__list {
   display: flex;
   gap: 10px;
   margin-top: 20px;
 }
-
-.footer-soc-link {
+.socials__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -536,19 +532,17 @@ button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-soc-link:hover, .footer-soc-link:focus {
+.socials__link:hover, .socials__link:focus {
   background-color: var(--btx-title--color);
 }
-
-.footer-soc-icon {
+.socials__icon {
   fill: currentColor;
 }
 
-.container-mailing {
+.mailing {
   margin-left: auto;
 }
-
-.mailing-info {
+.mailing__info {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -558,7 +552,7 @@ button {
   margin-bottom: 20px;
 }
 
-.mailing-input {
+.mailing-form__input {
   height: 50px;
   width: 358px;
   background-color: var(--bgrd--title--color);
@@ -575,7 +569,7 @@ button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mailing-input::placeholder {
+.mailing-form__input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -583,7 +577,7 @@ button {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.malling-btn {
+.mailing-form__btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -600,7 +594,7 @@ button {
   margin-left: 12px;
 }
 
-.malling-btn-icon {
+.mailing-form__btn-icon {
   fill: #ffffff;
   margin-left: 10px;
 }
