@@ -599,12 +599,12 @@ button {
   color: var(--btx-title--color);
 }
 
-.port_menu {
+.port-menu {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.port_btn_list {
+.port-btn {
   font-family: inherit;
   list-style: none;
   display: flex;
@@ -613,15 +613,15 @@ button {
   margin-bottom: 50px;
 }
 
-.port_btn_item {
+.port-btn__item {
   margin-left: 8px;
 }
 
-.blue_btn {
+.blue-btn {
   margin-left: 0;
 }
 
-.port_btn {
+.port-btn__link {
   display: flex;
   font-weight: 500;
   font-size: 16px;
@@ -638,37 +638,37 @@ button {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.port_btn:hover, .port_btn:focus {
+.port-btn__link:hover, .port-btn__link:focus {
   background-color: var(--btx-title--color);
   color: var(--second-title-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.current_button {
+.current-button {
   background-color: var(--btx-title--color);
   color: var(--second-title-color);
 }
 
-.menu_project_item {
+.menu-project {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.menu_project_list {
+.menu-project_item {
   /* outline: 1px solid tomato; */
   max-width: 100%;
 }
 
-.card_project {
+.card-project {
   display: block;
   cursor: pointer;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.card_project:hover, .card_project:focus {
+.card-project:hover, .card-project:focus {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -676,36 +676,10 @@ button {
   position: relative;
   overflow: hidden;
 }
-
-.menu_project_img {
+.card-thumb__img {
   display: block;
 }
-
-.card-content {
-  padding: 20px 24px;
-  border-left: 1px solid #EEEEEE;
-  border-right: 1px solid #EEEEEE;
-  border-bottom: 1px solid #EEEEEE;
-}
-
-.menu_project_name {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--first-title-color);
-}
-
-.menu_project_text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: var(--text-title--color);
-  margin-top: 4px;
-}
-
-.port_top_text {
+.card-thumb__text {
   position: absolute;
   top: 0;
   left: 0;
@@ -720,8 +694,30 @@ button {
   transform: translateY(101%);
   transition: transform 250ms linear;
 }
-.card_project:hover .port_top_text, .card_project:focus .port_top_text {
+.card-project:hover .card-thumb__text, .card-project:focus .card-thumb__text {
   transform: translateY(0%);
+}
+
+.card-content {
+  padding: 20px 24px;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+}
+.card-content__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--first-title-color);
+}
+.card-content__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--text-title--color);
+  margin-top: 4px;
 }
 
 .backdrop {
