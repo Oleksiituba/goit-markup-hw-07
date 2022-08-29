@@ -175,7 +175,7 @@ button {
 .connect__link:hover, .connect__link:focus {
   color: var(--btx-title--color);
 }
-.connect__ikon {
+.connect__icon {
   fill: currentColor;
   margin-right: 10px;
 }
@@ -482,13 +482,15 @@ button {
 .address__link-maps:hover, .address__link-maps:focus {
   color: var(--btx-title--color);
 }
+.address__item {
+  margin-top: 9px;
+}
 .address__link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
-  margin-top: 9px;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

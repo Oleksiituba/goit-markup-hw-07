@@ -19,18 +19,19 @@
 
 .address {
     font-style: normal;
-    margin-top: 20px;
+    margin-top: 20px ;
 
          &__list {
             list-style: none;
         }
-    
+ 
         &__link-maps {
             font-size: 14px;
             line-height: 1.71;
             letter-spacing: 0.03em;
             text-decoration: none;
             color: var(--second-title-color);
+         
             transition-property: color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -40,6 +41,9 @@
                 color: var(--btx-title--color);
             }
         }
+        &__item {
+            margin-top: 9px;
+        }
     
         &__link {
             font-size: 14px;
@@ -47,7 +51,7 @@
             letter-spacing: 0.03em;
             text-decoration: none;
             color: rgba(255, 255, 255, 0.6);
-            margin-top: 9px;
+            
             transition-property: color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
