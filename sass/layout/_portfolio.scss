@@ -1,12 +1,9 @@
 .header-list.header-link.current {
-    color: var(--btx-title--color)
+    color: var(--btx-title--color);
 }
 
 
-.port-menu {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 .port-btn {
     font-family: inherit;
     list-style: none;
@@ -18,9 +15,7 @@
 .port-btn__item {
     margin-left: 8px;
 }
-.blue-btn {
-    margin-left: 0;
-}
+
 .port-btn__link {
     display: flex;
     font-weight: 500;
@@ -44,10 +39,7 @@
     
         }
 }
-.current-button {
-    background-color: var(--btx-title--color);
-    color: var(--second-title-color);
-}
+
 
 .menu-project {
     list-style: none;
@@ -103,9 +95,9 @@
 
 .card-content {
     padding: 20px 24px;
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid#EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid var(--card--content--color);
+    border-right: 1px solid var(--card--content--color);
+    border-bottom: 1px solid var(--card--content--color);
 
    &__title {
             font-weight: 700;

@@ -2,14 +2,7 @@
     display: flex;
     justify-content: center;
     gap: 30px;
-       &-title {
-            font-size: 36px;
-            line-height: 1.16;
-            letter-spacing: 0.03em;
-            color: var(--first-title-color);
-            text-align: center;
-            margin-bottom: 50px;
-        }
+      
     
         &-item {
             width: 170px;

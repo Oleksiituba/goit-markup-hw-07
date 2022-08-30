@@ -33,13 +33,13 @@ ul {
     padding: 0;
     margin: 0;
 }
-.team-soc--color-light{
-    color: #AFB1B8;
-}
+
 .client-link--color-light{
-    color: #AFB1B8;
-        border: 1px solid #AFB1B8;
+    color: var(--soc--title--color);
+        border: 1px solid var(--soc--title--color);
 }
 .web--color-btx{
     color: var(--btx-title--color);
+
 }
+

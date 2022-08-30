@@ -1,9 +1,6 @@
 .header {
-    border-bottom: 1px solid #ECECEC;
-    >.container {
-            display: flex;
-            align-items: center;
-        }
+    border-bottom: 1px solid  var(--header--border--color);
+
 }
 .header__logo {
     font-family: 'Raleway';
