@@ -220,7 +220,7 @@ button {
 .connect__list {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
 }
 .connect__link {
   font-weight: 500;
